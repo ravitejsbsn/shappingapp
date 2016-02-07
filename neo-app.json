@@ -1,0 +1,33 @@
+{    
+	"welcomeFile": "index.html",
+	"routes": [        
+		{            
+			"path": "/proxy/cloudbackend",
+			"target": {
+				"type": "destination",
+				"name": "cloudbackend"
+		              },
+            "description": "Cloud backend"
+        },
+        {            
+			"path": "/proxy/cloudbackendimages",
+			"target": {
+				"type": "destination",
+				"name": "cloudbackendimages"
+		              },
+            "description": "Cloud images backend"
+        },
+        {
+                "path": "/resources",
+                "target": {
+                                "type": "service",
+                                "name": "sapui5",
+                                "entryPath": "/resources"
+                },
+                "description": "SAPUI5 Library"
+	}
+    ],
+    "cacheControl": [{        
+   		"maxAge": 604800    
+   		}]
+}
